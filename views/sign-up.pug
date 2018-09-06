@@ -1,0 +1,46 @@
+extends header
+block content
+    .container
+        .row.mg-top-4
+            .col.flex.justify-content-center
+                .container-form.material-card.material-shadow-1
+                    form.form-login.pd-1(action="/cms/register", method="post")
+                        .container
+                            .row
+                                .col
+                            .row
+                                .col.d-block
+                                    label Username
+                                    input.pd-0_5.form-control(type="text", name="username")
+                            .row
+                                .col.d-block
+                                    label Password
+                                    input.pd-0_5.form-control(type="password", name="password")
+                            .row
+                                .col.d-block
+                                    label Confirm password
+                                    input.pd-0_5.form-control(type="password", name="cpassword")
+                            .row
+                                .col.d-block
+                                    label Age
+                                    input.pd-0_5.form-control(type="number", name="age", min="18")
+                            .row
+                                .col.d-block
+                                    label Email
+                                    input.pd-0_5.form-control(type="email", name="email")
+                            .row.mg-top-1
+                                .col.d-block
+                                    button.btn(type="submit") Register
+                            .row.mg-top-2
+                                .col.flex.justify-content-center
+                                    span Copyrigth &copy; 2018 - All rights reserved
+                            .row
+                                .col.flex.justify-content-center
+                                    span Powered with&nbsp;
+                                        i.fas.fa-heart.heart
+                                        | &nbsp;by UnderNode LLC
+    if rootUser
+        .row.mg-top-2
+            .col.flex.justify-content-center
+                .material-card.material-shadow-1.pd-1
+                    span.info-root You're will root after register process.

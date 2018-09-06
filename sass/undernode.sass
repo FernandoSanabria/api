@@ -1,0 +1,298 @@
+$bg-primary-color: #2D3840
+$txt-primary-color: #F4F6F0
+$txt-muted-color: #828989
+$font: 'Roboto', sans-serif
+$teal-color: #009688
+$amber-color: #FFC107
+$blue-color: #2196F3
+$txt-default-color: #fff
+$progress-background: #2196F3
+$progress-foreground: #1976D2
+
+body
+  color: $txt-primary-color
+pre
+  color: $txt-primary-color
+
+.material-shadow-1 
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.09), 0 1px 2px rgba(0, 0, 0, 0.21)
+  transition: all 0.2s ease-in-out
+
+.material-shadow-2 
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.19)
+  transition: all 0.2s ease-in-out
+
+.material-shadow-3 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
+  transition: all 0.2s ease-in-out
+
+.material-shadow-4 
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)
+  transition: all 0.2s ease-in-out
+
+.material-shadow-5 
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22)
+  transition: all 0.2s ease-in-out
+
+.material-ripple 
+  position: relative
+  overflow: hidden
+  cursor: pointer
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+.material-card 
+  background: #fff
+  border-radius: 0.7em
+
+.material-ink 
+  position: absolute
+  background: #800000
+  border-radius: 50%
+  transform: scale(0)
+  opacity: 0.4
+
+.material-ink.animate 
+  animation: ripple 0.6s linear
+
+
+@keyframes ripple
+  to 
+    transform: scale(2.5)
+    opacity: 0
+
+.pd-0_5
+	padding: 0.5em
+
+.pd-1
+	padding: 1em
+
+.pd-2
+	padding: 2em
+
+.pd-3
+  padding: 3em
+
+.pd-4
+  padding: 4em
+
+.pd-5
+  padding: 5em
+
+.pd-r-1
+	padding-right: 1em
+
+.pd-r-2
+	padding-right: 2em
+
+.pd-r-3
+	padding-right: 3em
+
+.pd-r-4
+	padding-right: 4em
+
+.mg-top-0_5
+  margin-top: 0.5em
+
+.mg-top-1
+	margin-top: 1em
+
+.mg-top-2
+	margin-top: 2em
+
+.mg-top-3
+	margin-top: 3em
+
+.mg-top-4
+	margin-top: 4em
+
+.mg-top-5
+	margin-top: 5em
+a
+  color: $txt-primary-color
+  display: block
+
+.col.np
+	padding-right: 0 !important
+	padding-left: 0 !important
+
+.flex
+  display: flex
+  align-items: center
+  flex-flow: row
+
+body
+  padding: 50px
+  font-family: $font
+  min-height: 100vh
+  background-color: $bg-primary-color !important
+
+ul.unav
+  list-style: none
+  padding: 0
+  margin: 0
+  width: auto
+
+ul.unav.flex
+  li
+    a
+      text-transform: uppercase
+      padding: 1em
+      text-decoration: none
+      color: $txt-primary-color !important
+
+button.fab
+  background-color: transparent 
+  width: 2.5em
+  height: 2.5em
+  border-radius: 50%
+  border: 0
+  color: $txt-primary-color
+  background-color: $teal-color
+  outline: 0 !important
+  cursor: pointer
+
+h4.title
+  color: $txt-primary-color
+  text-transform: uppercase
+  font-size: 1.5em
+
+.item
+  min-width: 6em
+  min-height: 22em
+  position: relative
+
+.item
+  .item-img
+    width: 100%
+    height: 18em
+    background-position: center
+    background-size: cover
+    cursor: pointer
+  button.fab.rate
+    position: absolute
+    right: -1.3em
+    top: 60%
+    background-color: $blue-color
+    font-family: $font
+    font-weight: 700
+  button.fab.thumb
+    background-color: transparent
+    width: auto
+    height: auto
+  span.title 
+    color: $txt-muted-color
+    font-size: 0.7em
+    text-transform: uppercase
+    cursor: pointer
+    display: block
+    height: 100%
+    line-height: 1.8
+
+.btn
+  &.bmore
+    background-color: $teal-color !important
+    color: $txt-default-color
+.footer
+  color: $txt-primary-color
+  & > .row.legal
+    .heart
+      color: red
+  & > .row.menu--footer
+    ul.unav
+      li
+        a
+          color: $txt-muted-color
+          cursor: pointer
+          &:hover
+            text-decoration: underline
+        &:nth-child(1)
+          a 
+            color: $txt-primary-color
+            cursor: default
+            text-decoration: none
+
+.form-login
+  color: $txt-muted-color
+  width: 40em
+  max-width: 40em
+  a
+    color: $txt-muted-color
+    font-size: 0.8em
+  .d-block
+    *
+      display: block
+  .d-iblock
+    *
+      display: inline-block
+  input
+    width: 100%
+  button
+    width: 100%
+    background-color: $teal-color
+    color: $txt-primary-color
+  span
+    font-size: 0.9em
+    .heart
+      color: red
+  .branch
+    font-size: 5em
+  h5.login
+    text-transform: uppercase
+
+span.notfound 
+    font-size: 20em
+    font-weight: bold
+span.notfound-text
+    font-size: 2em
+button.btn-gotohome
+    background-color: $teal-color
+    color: $txt-primary-color
+    font-size: 1.2em
+span.info-root
+  color: $txt-muted-color
+label.upload-tag
+  color: $txt-default-color
+  background-color: $teal-color
+#imgEvent 
+  width: 0
+  z-index: -1
+  position: absolute
+  overflow: hidden
+  height: 0
+
+.thumb
+  width: auto
+  height: 80px
+  padding: 0.5em
+
+#noImgLegend
+  text-align: center
+  width: 100%
+
+#imgContainer
+  position: relative
+  max-height: 10em !important
+  overflow-x: hidden
+  overflow-y: auto
+#progress
+  width: 100%
+  -webkit-appearance: none
+  color: $txt-muted-color
+
+#progress::before
+  content: attr(data-load)
+  width: 100%
+  display: block
+  text-align: center
+
+#progress::-webkit-progress-bar
+  background-color: $txt-muted-color
+
+#progress::-webkit-progress-value
+  background-color: $progress-foreground
+
+.events
+  font-size: 8em

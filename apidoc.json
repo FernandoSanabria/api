@@ -1,0 +1,17 @@
+{
+  "name": "StopDrug API REST by UnderNode LLC",
+  "version": "1.0.0",
+  "description": "Documentation for StopDrug API REST",
+  "apidoc": {
+    "title": "StopDrug API REST",
+    "url": "https://www.github.com/blacknode/fedesoft"
+  },
+  "header": {
+    "title": "Getting Started",
+    "filename": "/markdown/starting.md"
+  },
+  "footer": {
+    "title": "UnderNode API REST",
+    "filename": "/markdown/about.md"
+  }
+}
